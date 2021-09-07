@@ -1,5 +1,5 @@
-endpoint: http://localhost:4466/prismadb/dev
-# endpoint: https://prisma-server-0abf4fc245.herokuapp.com/Prisma_backend/dev
+# endpoint: http://localhost:4466/prismadb/dev
+endpoint: https://prisma-server-0abf4fc245.herokuapp.com/Prisma_backend/dev
 datamodel: datamodel.graphql
 
 generate:

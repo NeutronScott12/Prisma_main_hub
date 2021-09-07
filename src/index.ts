@@ -37,7 +37,7 @@ const s3Client: S3 = new S3({
 export const db: Prisma = new Prisma({
 	endpoint:
 		process.env.NODE_ENV !== 'production'
-			? 'http://localhost:4466/prismadb/dev'
+			? 'https://prisma-server-0abf4fc245.herokuapp.com/Prisma_backend/dev'
 			: `${process.env.HEROKU_PRISMA_ENDPOINT}`,
 	secret: process.env.MANAGEMENT_API_SECRET || 'my-server-secret-123',
 	debug: false
@@ -88,6 +88,12 @@ const server: ApolloServer = new ApolloServer({
 server.applyMiddleware({
 	app,
 	cors: {
+		allowedHeaders: [
+			'Content-Type',
+			'Origin',
+			'Accept',
+			'Access-Control-Allow-Origin'
+		],
 		credentials: true,
 		origin: [
 			'http://localhost:3000',

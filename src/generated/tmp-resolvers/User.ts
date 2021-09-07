@@ -3,6 +3,7 @@
 
 import { UserResolvers } from '../graphqlgen'
 
+//@ts-ignore
 export const User: UserResolvers.Type = {
 	...UserResolvers.defaultResolvers,
 

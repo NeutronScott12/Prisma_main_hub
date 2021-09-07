@@ -47,7 +47,7 @@
 		"graphql-tools": "^4.0.4",
 		"helmet": "^3.15.1",
 		"ioredis": "^4.6.2",
-		"lodash": "^4.17.11",
+		"lodash": "^4.17.21",
 		"logform": "^2.1.2",
 		"merge-graphql-schemas": "^1.5.2",
 		"mime-types": "^2.1.22",

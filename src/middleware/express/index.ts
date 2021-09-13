@@ -46,7 +46,7 @@ export const middleware = (app: Express, passport: passport.PassportStatic) => {
 			saveUninitialized: false,
 			cookie: {
 				httpOnly: true,
-				secure: 'auto', // process.env.NODE_ENV === 'production', remember for https
+				secure: process.env.NODE_ENV === 'production', // remember for https
 				maxAge: 1000 * 60 * 60 * 24 * 7
 			}
 		})

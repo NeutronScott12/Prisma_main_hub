@@ -6,7 +6,6 @@
 		"sourceMap": true,
 		"outDir": "./dist",
 		"moduleResolution": "node",
-
 		"removeComments": true,
 		"noImplicitAny": true,
 		"strictNullChecks": true,
@@ -19,8 +18,15 @@
 		"allowSyntheticDefaultImports": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"declaration": true
+		"declaration": true,
+		"skipLibCheck": true
 	},
-	"exclude": ["./node_modules", "./src/generated/graphqlGen/tmp-resolvers"],
+	"exclude": [
+		"node_modules",
+		"./node_modules",
+		"./node_modules/*",
+		"./node_modules/@types/node/index.d.ts",
+		"./src/generated/graphqlGen/tmp-resolvers/*"
+	],
 	"include": ["./src/**/*.tsx", "./src/**/*.ts"]
 }

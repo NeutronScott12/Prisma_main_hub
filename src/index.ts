@@ -1,5 +1,5 @@
 import { ApolloServer } from 'apollo-server-express'
-import { S3 } from 'aws-sdk'
+// import { S3 } from 'aws-sdk'
 import 'dotenv/config'
 import * as express from 'express'
 import { importSchema } from 'graphql-import'
@@ -26,13 +26,13 @@ import { logger } from './utils/logger'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
 
-const s3Client: S3 = new S3({
-	accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-	secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-	params: {
-		Bucket: process.env.AWS_BUCKET
-	}
-})
+// const s3Client: S3 = new S3({
+// 	accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+// 	secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+// 	params: {
+// 		Bucket: process.env.AWS_BUCKET
+// 	}
+// })
 
 export const db: Prisma = new Prisma({
 	endpoint:
@@ -79,7 +79,7 @@ const server: ApolloServer = new ApolloServer({
 			session: req !== undefined ? req.session : req,
 			redis,
 			db,
-			s3: s3Client,
+			// s3: s3Client,
 			stripe
 		}
 	}
@@ -97,7 +97,9 @@ server.applyMiddleware({
 			'http://localhost:5000',
 			'http://mainsite.surge.sh',
 			'https://inspiring-euler-247a1c.netlify.com',
-			'http://binarystash.co.uk/'
+			'http://binarystash.co.uk/',
+			'https://binarystash.co.uk/',
+			'https://www.binarystash.co.uk/'
 		]
 	}
 })

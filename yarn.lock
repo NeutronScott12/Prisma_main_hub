@@ -781,13 +781,9 @@
   dependencies:
     "@types/node" "*"
 
-"@types/yup@0.26.18":
-  version "0.26.18"
-  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.18.tgz#7f76ad65b385577fb89936ce26a7f830a9560a9c"
-
-"@types/yup@^0.26.11":
-  version "0.26.11"
-  resolved "https://registry.npmjs.org/@types/yup/-/yup-0.26.11.tgz"
+"@types/yup@0.26.23", "@types/yup@^0.26.11":
+  version "0.26.23"
+  resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.23.tgz#00721a3b675e7609e5bcccb94234e86b754bcd04"
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -4542,11 +4538,11 @@ graphql-schema-linter@0.2.0:
     graphql "^14.0.0"
     lodash "^4.17.4"
 
-graphql-shield@^5.3.0:
-  version "5.7.3"
-  resolved "https://registry.yarnpkg.com/graphql-shield/-/graphql-shield-5.7.3.tgz#308daa76b66fae0ae4cc8d491b7bf1221b87f569"
+graphql-shield@^6.0.6:
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/graphql-shield/-/graphql-shield-6.0.6.tgz#ef8c53f1dd972c2d1828ffd45ce9b1f877576534"
   dependencies:
-    "@types/yup" "0.26.18"
+    "@types/yup" "0.26.23"
     lightercollective "^0.3.0"
     object-hash "^1.3.1"
     yup "^0.27.0"

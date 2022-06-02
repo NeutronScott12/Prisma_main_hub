@@ -53,7 +53,7 @@
 		"mime-types": "^2.1.22",
 		"morgan": "^1.9.0",
 		"multiparty": "^4.1.4",
-		"nodemailer": "^5.1.1",
+		"nodemailer": "^6.6.1",
 		"nodemailer-sendgrid-transport": "^0.2.0",
 		"npm": "^6.8.0",
 		"passport": "^0.4.0",
